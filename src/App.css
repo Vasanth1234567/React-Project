@@ -1,7 +1,10 @@
 .App {
   text-align: center;
+  background-color: gray;
 }
-
+Link{
+  text-decoration: none;
+}
 .butt{
   margin-top: 20px;
 }
@@ -14,4 +17,9 @@
 }
 .clear{
   margin-left: 120px;
+}
+.char{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

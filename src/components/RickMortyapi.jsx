@@ -27,8 +27,8 @@ class Rickandmortyapi extends Component {
   render() {
     const {posts,errorMessage}=this.state
     return (
-        <div>
-      {posts.length?posts.map(post => <div>{post.origin.name}</div>):null}
+        <div class="char">
+      {posts.length?posts.map(post => <div key={post.id}><img src={post.image} alt="RickImages"/><h2 key={post.id}>{post.name}</h2></div>):null}
       {errorMessage?<h1>{errorMessage}</h1>:null}
       </div>
     )
